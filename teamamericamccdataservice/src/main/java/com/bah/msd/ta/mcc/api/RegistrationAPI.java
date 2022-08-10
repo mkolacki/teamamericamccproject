@@ -41,6 +41,7 @@ public class RegistrationAPI {
 				registration = registrationList.get(i);
 			}
 		}
+		System.out.println("hi");
 		return registration;
 	}
 
