@@ -4,21 +4,22 @@ import java.util.Date;
 
 public class Registration {
 	long id;
-	String eventID;
-	String customerID;
-	Date registrationDate;
+	String event_id;
+	String customer_id;
+	Date registration_date;
 	String notes;
 	
 	public Registration() {
 		
 	}
 	
-	public Registration(long id, String eventID, String customerID, Date registrationDate, String notes) {
+
+	public Registration(long id, String event_id, String customer_id, Date registration_date, String notes) {
 		super();
 		this.id = id;
-		this.eventID = eventID;
-		this.customerID = customerID;
-		this.registrationDate = registrationDate;
+		this.event_id = event_id;
+		this.customer_id = customer_id;
+		this.registration_date = registration_date;
 		this.notes = notes;
 	}
 
@@ -30,28 +31,28 @@ public class Registration {
 		this.id = id;
 	}
 
-	public String getEventID() {
-		return eventID;
+	public String getEvent_id() {
+		return event_id;
 	}
 
-	public void setEventID(String eventID) {
-		this.eventID = eventID;
+	public void setEvent_id(String event_id) {
+		this.event_id = event_id;
 	}
 
-	public String getCustomerID() {
-		return customerID;
+	public String getCustomer_id() {
+		return customer_id;
 	}
 
-	public void setCustomerID(String customerID) {
-		this.customerID = customerID;
+	public void setCustomer_id(String customer_id) {
+		this.customer_id = customer_id;
 	}
 
-	public Date getRegistrationDate() {
-		return registrationDate;
+	public Date getRegistration_date() {
+		return registration_date;
 	}
 
-	public void setRegistrationDate(Date registrationDate) {
-		this.registrationDate = registrationDate;
+	public void setRegistration_date(Date registration_date) {
+		this.registration_date = registration_date;
 	}
 
 	public String getNotes() {
@@ -61,5 +62,5 @@ public class Registration {
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}
-
+	
 }
