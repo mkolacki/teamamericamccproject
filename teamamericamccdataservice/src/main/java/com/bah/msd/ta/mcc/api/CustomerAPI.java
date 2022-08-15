@@ -180,7 +180,7 @@ public class CustomerAPI {
 		// delete a customer entry? If you did actually delete a customer entry, are
 		// there issues
 		// you could potentially run into later?
-		
+		System.out.println();
 		repo.deleteById(id);
 		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 		
