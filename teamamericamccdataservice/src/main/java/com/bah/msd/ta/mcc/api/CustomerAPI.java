@@ -75,7 +75,7 @@ public class CustomerAPI {
 		// Workshop: Write an implementation that replies with all customers.
 		// Your implementation should be no more than a few lines, at most, and make use
 		// of the 'repo' object
-
+		System.out.println();
 		return repo.findAll();
 	}
 
