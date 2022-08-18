@@ -65,15 +65,13 @@ public class RegistrationAPI {
 	}
 
 	@PutMapping("/{eventId}")
-	public ResponseEntity<?> putRegistration(
-			@RequestBody Registration newRegistration,
-			@PathVariable("eventId") long eventId) 
-	{
+	public ResponseEntity<?> putRegistration(@RequestBody Registration newRegistration, @PathVariable("eventId") long eventId) {
 		// Workshop: Implementation to update an event. Think about error handling.
 		if (newRegistration.getId() != eventId || newRegistration.getEvent_id() == null || newRegistration.getCustomer_id() == null || newRegistration.getRegistration_date() == null || newRegistration.getNotes() == null) {
 			return ResponseEntity.badRequest().build();
 		}
 		
+		newRegistration = repo.save(newRegistration);
 		return ResponseEntity.ok().build();
 	}	
 	
