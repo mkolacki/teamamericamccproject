@@ -4,11 +4,11 @@ node {
     }
     
     stage ("Gradle Build - DataService") {
-        sh 'gradle clean build'
+        sh 'gradle -b teamamericamccdataservice/build.gradle clean build'
     }
     
     stage ("Gradle Bootjar-Package - DataService") {
-        sh 'gradle bootjar'
+        sh 'gradle -b teamamericamccdataservice/build.gradle bootjar'
     }
     
     stage('User Acceptance Test - DataService') {
