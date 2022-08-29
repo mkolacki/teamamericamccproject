@@ -19,7 +19,7 @@ node {
 	
 	  if(response=="Yes") {
 	    stage('Release - DataService') {
-	      sh 'gradle build -x test'
+	      //sh 'gradle build -x test'
 	      sh 'echo Release this version'
 	    }
 	  }
